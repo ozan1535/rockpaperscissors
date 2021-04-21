@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="oyun.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Taş, Kağıt, Makas</h1>
+
+    <div class="resim">
+        <div class="kart secim">
+        <h3 id="yap">SEÇİMİNİ YAP</h3>
+        <img src="tas.png" id="tas" onclick="tas()" alt="TAŞ" width="150px" height="150px">
+        <img src="kagit.png" id="kagit" onclick="kagit()" alt="KAĞIT" width="150px" height="150px">
+        <img src="makas.png" id="makas" onclick="makas()" alt="MAKAS" width="150px" height="150px">
+        </div>
+        <div class="kart bilgi">
+            <h3 id="round1">ROUND</h3>
+            <p id="round">1</p>
+            <div class="disp">
+                <div class="oyunbilgi">
+                    <p>OYUNCU OYUN</p>
+                    <img src="tas.png" class="oyunlar" id="oyuncuoyun">
+                </div>
+                <div class="oyunbilgi">
+                    <p>TRINEO OYUN</p>
+                    <img class="oyunlar" id="trineooyun" src="tas.png">
+                </div>
+            </div>
+            <div class="disp">
+                <div class="oyunbilgi">
+                    <p>OYUNCU PUAN</p>
+                    <p id="oyuncupuan">0</p>
+                </div>
+                <div class="oyunbilgi">
+                    <p>TRINEO PUAN</p>
+                    <p id="trineopuan">0</p>
+                </div>
+            </div>
+            <p id="durum">OYUN BAŞLASIN</p>
+            <p id="demo">OYUN BİTTİ</p>
+            <p id="yenioyun">YENİ OYUN</p>
+        </div>
+        <div class="kart trineo">
+            <img src="brain.png" id="beyin" alt="" width="150px" height="150px">
+        </div>
+    </div>
+
+    <script src="oyun.js"></script>
+    
+</body>
+</html>

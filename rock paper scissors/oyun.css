@@ -1,0 +1,203 @@
+body {
+    font-family: tahoma;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(163,76,171,0.3337710084033614) 0%, rgba(182,139,237,1) 100%);
+
+}
+
+h1 {
+    text-align: center;
+    color: rgb(155, 53, 70);
+}
+
+#yap {
+    color: rgb(155, 53, 70);
+}
+
+#round {
+    color: rgb(155, 53, 70);
+    font-size: 25px;
+}
+
+#round1 {
+    color: rgb(155, 53, 70);
+}
+
+#beyin {
+    margin-top: 50px;
+}
+
+.resim {
+    display: flex;
+    justify-content: center;
+}
+
+.kart h3,p {
+    text-align: center;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.secim {
+    width: 170px;
+    height: 550px;
+}
+
+
+.secim img {
+    display: block;
+    margin: 10px; 
+    transition: 0.4s;  
+}
+
+.secim img:hover {
+    cursor: pointer;
+    width: 155px;
+    height: 155px;
+}
+
+.oyunlar {
+    width: 50px;
+    height: 50px;
+}
+
+#oyuncuoyun {
+    transform: scaleX(-1);
+}
+
+
+.resim .kart {
+    margin: 20px;
+}
+
+.resim .bilgi {
+    align-self: center;
+    justify-content: center;
+    height: 400px;
+}
+
+.resim .bilgi #yenioyun {
+    display: none;
+    padding: 5px;
+    background-color: rgb(211, 106, 180);
+    border-radius: 15px;
+    color: white;
+    transition: 0.5s;
+}
+
+.resim .bilgi #yenioyun:hover {
+    padding: 5px;
+    color: rgb(211, 106, 180);
+    border-radius: 15px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.disp {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.disp .oyunbilgi {
+    flex-grow: 2;
+    padding: 10px;
+    text-align: center;
+} 
+
+
+.resim .trineo {
+    align-self: center;
+}
+
+#demo {
+    display: none;
+}
+
+@media screen and (max-width:600px) and (min-width:100px) {
+
+    body {
+        position: relative;
+        top: 180px;
+    }
+
+    .secim img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .oyunlar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .trineo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    #beyin {
+        margin-top: 0px;
+    }
+
+    .secim {
+        width: 40px;
+        height: 50px;
+    }
+
+    .secim img {
+        display: block;
+        margin: 5px; 
+        transition: 0.4s;  
+    }
+
+    .secim img:hover {
+        cursor: pointer;
+        width: 75px;
+        height: 75px;
+    }
+
+    .resim .kart {
+        margin: 3px;
+    }
+
+    .resim .bilgi {
+        position: relative;
+        left: 20px;
+        height: 400px;
+    }
+
+    .resim .bilgi #yenioyun {
+        display: none;
+        padding: 5px;
+        background-color: rgb(211, 106, 180);
+        border-radius: 15px;
+        color: white;
+        transition: 0.5s;
+    }
+    
+    .resim .bilgi #yenioyun:hover {
+        padding: 5px;
+        color: rgb(211, 106, 180);
+        border-radius: 15px;
+        background-color: white;
+        cursor: pointer;
+    }
+    
+    .disp {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .disp .oyunbilgi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        padding: 4px;
+        text-align: center;
+    } 
+    
+  }
